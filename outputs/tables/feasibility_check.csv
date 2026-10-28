@@ -1,0 +1,5 @@
+RQ,Unit,Available,Minimum required,Requirement met
+RQ1,flights in modelling sample,400000,9604,True
+RQ2,route-months,148241,783,True
+RQ3,flights in clustered carrier-airports,14044433,6152,True
+RQ4,routes with complete series,150,88,True

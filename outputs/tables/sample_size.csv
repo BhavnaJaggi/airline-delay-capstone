@@ -1,0 +1,5 @@
+RQ,Method,Parameters,Minimum N,Unit
+RQ1,Proportion CI (margin of error),Z=1.96; p=0.5; E=0.01,9604,flights
+RQ2,Correlation power (Fisher z),alpha=0.05; power=0.8; r=0.1,783,route-months
+RQ3,Two-proportion z-test,alpha=0.05; power=0.8; p1=0.015; p2=0.025,6152,"flights (3,076 per group)"
+RQ4,Paired difference (Cohen d),alpha=0.05; power=0.8; d=0.3,88,routes

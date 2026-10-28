@@ -1,0 +1,1102 @@
+{
+  "data_overview": {
+    "carrier_airport": {
+      "carrier_airport_pairs_otp": 1814,
+      "pairs_matched_t100": 1814,
+      "rq3_flights": 14044433,
+      "rq3_units": 1598
+    },
+    "join": {
+      "excluded_bad_load_factor": 0,
+      "excluded_too_few_flights": 86555,
+      "excluded_unmatched": 96,
+      "matched_route_months": 234796,
+      "matched_share_flights_pct": 99.99924719544795,
+      "matched_share_route_months_pct": 99.95913015343221,
+      "otp_route_months": 234892,
+      "rq2_route_months": 148241,
+      "rq2_routes": 9998
+    },
+    "otp_audit": {
+      "arr_delay_hi_fence": 85.0,
+      "arr_delay_lo_fence": -90.0,
+      "arr_delay_max": 4336.0,
+      "arr_delay_min": -128.0,
+      "arr_delay_missing_explained": 235948,
+      "arr_delay_missing_total": 235949,
+      "arr_delay_missing_unexplained": 1,
+      "arr_delay_over_600": 20417,
+      "arr_delay_p999": 753.0,
+      "arr_delay_q1": -15.0,
+      "arr_delay_q3": 10.0,
+      "arrdel15_inconsistent": 0,
+      "bad_distance": 0,
+      "bad_sched_time": 0,
+      "cancelled": 199191,
+      "cause_missing_among_late": 2,
+      "clean_cancel_rate_pct": 1.4146404861128865,
+      "clean_late_rate_pct": 21.557689666748047,
+      "clean_operated": 13844731,
+      "clean_rows": 14080680,
+      "diverted": 36757,
+      "duplicates": 0,
+      "late_flights": 2984604,
+      "operated_rows_raw": 13844731,
+      "origin_equals_dest": 0,
+      "outliers_high": 707202,
+      "outliers_low": 11,
+      "raw_columns_used": 31,
+      "raw_rows": 14080680,
+      "removed_duplicates": 0,
+      "removed_invalid": 0
+    },
+    "otp_columns_total_in_table": 109,
+    "otp_months": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12"
+    ],
+    "rq1_sample": {
+      "late_rate_pct": 21.581748962402344,
+      "lf_prev_missing_pct": 1.238,
+      "sample_n": 400000
+    },
+    "rq4_series": {
+      "first_period": "2022-01-01",
+      "last_period": "2026-07-01",
+      "months": 55,
+      "routes_used": 150,
+      "routes_with_complete_series": 5101
+    },
+    "t100_audit": {
+      "class_f_rows": 1532260,
+      "duplicates": 0,
+      "lf_median": 80.32634897088819,
+      "lf_missing_or_zero_seats": 1730,
+      "lf_over_100": 77,
+      "missing_cells": {
+        "dep_performed": 0,
+        "distance": 0,
+        "passengers": 0,
+        "seats": 0
+      },
+      "missing_key_passengers": 3249.0,
+      "missing_key_rows": 24,
+      "raw_rows": 2006801,
+      "segment_months": 793291,
+      "service_class_counts": {
+        "F": 1532260,
+        "G": 162352,
+        "L": 260201,
+        "P": 51988
+      }
+    }
+  },
+  "eda": {
+    "airport_best": "LAX",
+    "airport_range": [
+      18.17094612121582,
+      27.886640548706055
+    ],
+    "airport_rates": {
+      "ATL": 21.81,
+      "BOS": 22.26,
+      "CLT": 25.94,
+      "DCA": 23.58,
+      "DEN": 24.26,
+      "DFW": 27.89,
+      "DTW": 20.46,
+      "LAS": 21.31,
+      "LAX": 18.17,
+      "LGA": 21.89,
+      "MCO": 24.47,
+      "ORD": 25.2,
+      "PHX": 19.38,
+      "SEA": 21.85,
+      "SFO": 20.89
+    },
+    "airport_worst": "DFW",
+    "arr_delay_mean": 7.797005653381348,
+    "arr_delay_median": -6.0,
+    "cancel_peak_period": "2024-01",
+    "cancel_rate_pct": 1.4146404861128865,
+    "carrier_cancel_worst": "OH",
+    "carrier_late_best": "9E",
+    "carrier_late_worst": "F9",
+    "carriers": {
+      "9E": {
+        "cancel": 2.3,
+        "flights": 195072,
+        "late": 15.83
+      },
+      "AA": {
+        "cancel": 1.68,
+        "flights": 1918957,
+        "late": 25.92
+      },
+      "AS": {
+        "cancel": 1.58,
+        "flights": 482250,
+        "late": 22.59
+      },
+      "B6": {
+        "cancel": 1.6,
+        "flights": 462386,
+        "late": 25.82
+      },
+      "DL": {
+        "cancel": 1.0,
+        "flights": 2010253,
+        "late": 18.54
+      },
+      "F9": {
+        "cancel": 2.05,
+        "flights": 397674,
+        "late": 28.34
+      },
+      "G4": {
+        "cancel": 1.06,
+        "flights": 244774,
+        "late": 23.42
+      },
+      "HA": {
+        "cancel": 0.93,
+        "flights": 156968,
+        "late": 16.38
+      },
+      "MQ": {
+        "cancel": 1.85,
+        "flights": 567152,
+        "late": 20.95
+      },
+      "NK": {
+        "cancel": 1.74,
+        "flights": 446824,
+        "late": 22.85
+      },
+      "OH": {
+        "cancel": 3.18,
+        "flights": 460355,
+        "late": 24.73
+      },
+      "OO": {
+        "cancel": 1.29,
+        "flights": 1559088,
+        "late": 19.91
+      },
+      "UA": {
+        "cancel": 1.22,
+        "flights": 1532195,
+        "late": 20.68
+      },
+      "WN": {
+        "cancel": 0.84,
+        "flights": 2781434,
+        "late": 21.0
+      },
+      "YX": {
+        "cancel": 2.61,
+        "flights": 629349,
+        "late": 18.02
+      }
+    },
+    "cause_flights_with_any_cause_pct": 99.99993298943511,
+    "cause_share": {
+      "Air carrier": 33.44,
+      "Extreme weather": 6.17,
+      "Late-arriving aircraft": 39.79,
+      "National Aviation System": 20.44,
+      "Security": 0.15
+    },
+    "cause_top": "Late-arriving aircraft",
+    "corr_late_cancel": 0.7020772973721892,
+    "corr_lf_distance": 0.3587342504067684,
+    "corr_lf_late": 0.09864274066053957,
+    "decile_first_last": [
+      18.5867117228742,
+      22.377103852679728
+    ],
+    "decile_table": [
+      {
+        "late": 18.587,
+        "lf": 57.942,
+        "lf_decile": 0,
+        "n": 14825,
+        "sd": 10.708,
+        "se": 0.088
+      },
+      {
+        "late": 20.118,
+        "lf": 70.014,
+        "lf_decile": 1,
+        "n": 14824,
+        "sd": 10.491,
+        "se": 0.086
+      },
+      {
+        "late": 20.606,
+        "lf": 74.7,
+        "lf_decile": 2,
+        "n": 14824,
+        "sd": 10.624,
+        "se": 0.087
+      },
+      {
+        "late": 20.952,
+        "lf": 77.995,
+        "lf_decile": 3,
+        "n": 14824,
+        "sd": 10.826,
+        "se": 0.089
+      },
+      {
+        "late": 21.254,
+        "lf": 80.673,
+        "lf_decile": 4,
+        "n": 14824,
+        "sd": 10.956,
+        "se": 0.09
+      },
+      {
+        "late": 21.581,
+        "lf": 83.043,
+        "lf_decile": 5,
+        "n": 14824,
+        "sd": 11.146,
+        "se": 0.092
+      },
+      {
+        "late": 21.906,
+        "lf": 85.24,
+        "lf_decile": 6,
+        "n": 14824,
+        "sd": 11.52,
+        "se": 0.095
+      },
+      {
+        "late": 22.434,
+        "lf": 87.407,
+        "lf_decile": 7,
+        "n": 14824,
+        "sd": 11.747,
+        "se": 0.096
+      },
+      {
+        "late": 22.832,
+        "lf": 89.732,
+        "lf_decile": 8,
+        "n": 14824,
+        "sd": 12.0,
+        "se": 0.099
+      },
+      {
+        "late": 22.377,
+        "lf": 93.071,
+        "lf_decile": 9,
+        "n": 14824,
+        "sd": 12.336,
+        "se": 0.101
+      }
+    ],
+    "demand_low_month": 2,
+    "demand_peak_month": 7,
+    "demand_seasonal_swing_pct": 27.393163515079856,
+    "demand_yearly_millions": {
+      "2022": 127.88,
+      "2023": 138.87,
+      "2024": 140.62,
+      "2025": 135.85,
+      "2026": 78.26
+    },
+    "diverted_rate_pct": 0.261045631318942,
+    "dow_low": "Tuesday",
+    "dow_peak": "Sunday",
+    "dow_rate": {
+      "Friday": 23.29,
+      "Monday": 22.15,
+      "Saturday": 20.7,
+      "Sunday": 24.45,
+      "Thursday": 22.6,
+      "Tuesday": 18.15,
+      "Wednesday": 18.98
+    },
+    "hour_earliest": 0,
+    "hour_earliest_rate": 18.361448287963867,
+    "hour_peak": 19,
+    "hour_rate": {
+      "0": 18.360000610351562,
+      "1": 19.3799991607666,
+      "10": 16.8799991607666,
+      "11": 18.559999465942383,
+      "12": 20.1200008392334,
+      "13": 21.989999771118164,
+      "14": 24.559999465942383,
+      "15": 26.420000076293945,
+      "16": 28.299999237060547,
+      "17": 29.530000686645508,
+      "18": 30.549999237060547,
+      "19": 31.270000457763672,
+      "2": 20.81999969482422,
+      "20": 31.100000381469727,
+      "21": 28.719999313354492,
+      "22": 27.979999542236328,
+      "23": 20.649999618530273,
+      "3": 18.81999969482422,
+      "5": 8.949999809265137,
+      "6": 9.8100004196167,
+      "7": 12.510000228881836,
+      "8": 14.170000076293945,
+      "9": 15.5600004196167
+    },
+    "late_low_period": "2024-10",
+    "late_peak_period": "2024-07",
+    "late_rate_pct": 21.557689666748047,
+    "lf_median": 81.89727463312369,
+    "lf_q1": 74.75,
+    "lf_q3": 87.39105988192297,
+    "lf_skew": -1.3462436076219435,
+    "median_daily_cancel_rate": 0.5385233123907601,
+    "monthly_cancel": {
+      "2024-01": 3.73,
+      "2024-02": 0.58,
+      "2024-03": 0.87,
+      "2024-04": 0.69,
+      "2024-05": 1.35,
+      "2024-06": 1.29,
+      "2024-07": 2.89,
+      "2024-08": 2.05,
+      "2024-09": 0.6,
+      "2024-10": 1.02,
+      "2024-11": 0.46,
+      "2024-12": 0.7,
+      "2025-01": 3.02,
+      "2025-02": 1.47,
+      "2025-03": 1.15,
+      "2025-04": 0.84,
+      "2025-05": 1.05,
+      "2025-06": 1.59,
+      "2025-07": 2.45,
+      "2025-08": 1.08,
+      "2025-09": 0.51,
+      "2025-10": 0.53,
+      "2025-11": 2.49,
+      "2025-12": 1.55
+    },
+    "monthly_late": {
+      "2024-01": 24.06,
+      "2024-02": 15.92,
+      "2024-03": 20.85,
+      "2024-04": 19.06,
+      "2024-05": 26.41,
+      "2024-06": 24.94,
+      "2024-07": 29.62,
+      "2024-08": 23.47,
+      "2024-09": 15.51,
+      "2024-10": 13.2,
+      "2024-11": 14.67,
+      "2024-12": 21.15,
+      "2025-01": 18.79,
+      "2025-02": 20.77,
+      "2025-03": 19.59,
+      "2025-04": 19.66,
+      "2025-05": 23.6,
+      "2025-06": 28.26,
+      "2025-07": 28.89,
+      "2025-08": 22.56,
+      "2025-09": 16.63,
+      "2025-10": 20.32,
+      "2025-11": 20.56,
+      "2025-12": 26.77
+    },
+    "n_carriers": 15,
+    "n_flights": 14080680,
+    "n_operated": 13844731,
+    "p90": 46.0,
+    "p99": 220.0,
+    "pct_early": 61.35637449366116,
+    "pct_early_or_ontime": 78.44231137463053,
+    "share_over_180": 1.5138538986420176,
+    "share_over_60": 7.625550832298583,
+    "skew": 5.392606830769523,
+    "top_cancel_days": [
+      {
+        "cancelled": 3548,
+        "date": "2024-07-19",
+        "rate_pct": 16.53,
+        "worst_carrier": "G4",
+        "worst_carrier_rate_pct": 58.8
+      },
+      {
+        "cancelled": 2856,
+        "date": "2025-01-10",
+        "rate_pct": 15.98,
+        "worst_carrier": "OH",
+        "worst_carrier_rate_pct": 36.7
+      },
+      {
+        "cancelled": 2962,
+        "date": "2024-01-15",
+        "rate_pct": 15.91,
+        "worst_carrier": "OH",
+        "worst_carrier_rate_pct": 29.0
+      },
+      {
+        "cancelled": 2111,
+        "date": "2024-01-16",
+        "rate_pct": 12.77,
+        "worst_carrier": "YX",
+        "worst_carrier_rate_pct": 36.9
+      },
+      {
+        "cancelled": 2480,
+        "date": "2025-11-09",
+        "rate_pct": 12.13,
+        "worst_carrier": "YX",
+        "worst_carrier_rate_pct": 30.6
+      }
+    ],
+    "yearly": {
+      "2024": {
+        "arr_delay_median": -6.0,
+        "cancel_rate_pct": 1.36,
+        "flights": 7079061,
+        "late_rate_pct": 20.82
+      },
+      "2025": {
+        "arr_delay_median": -6.0,
+        "cancel_rate_pct": 1.47,
+        "flights": 7001619,
+        "late_rate_pct": 22.31
+      }
+    }
+  },
+  "rq1": {
+    "confusion_lr": {
+      "fn": 6102,
+      "fp": 25644,
+      "tn": 37091,
+      "tp": 11163
+    },
+    "decision": "reject H0",
+    "design_columns": 102,
+    "distance_or_per_1000mi": 0.9880522023113597,
+    "distance_p": 0.1905489719790543,
+    "factor_tests": [
+      {
+        "Factor": "Scheduled departure block",
+        "LR_chi2": 10567.932203,
+        "df": 18,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Month",
+        "LR_chi2": 3163.8682,
+        "df": 11,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Carrier",
+        "LR_chi2": 1119.70274,
+        "df": 14,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Destination airport",
+        "LR_chi2": 896.431293,
+        "df": 25,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Day of week",
+        "LR_chi2": 799.917224,
+        "df": 6,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Origin airport",
+        "LR_chi2": 734.054431,
+        "df": 25,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Prior-month load factor",
+        "LR_chi2": 53.584145,
+        "df": 2,
+        "p_value": 0.0,
+        "significant_at_.05": true
+      },
+      {
+        "Factor": "Route distance",
+        "LR_chi2": 1.71516,
+        "df": 1,
+        "p_value": 0.190317,
+        "significant_at_.05": false
+      }
+    ],
+    "importance": {
+      "Carrier": 0.13440999388694763,
+      "Day of week": 0.10541000217199326,
+      "Destination airport": 0.08549000322818756,
+      "Month": 0.2048799991607666,
+      "Origin airport": 0.07677999883890152,
+      "Prior-month load factor": 0.03911000117659569,
+      "Route distance": 0.04755000025033951,
+      "Scheduled departure block": 0.39820000529289246
+    },
+    "importance_method": "SHAP (mean |factor contribution|, log-odds)",
+    "lf_prev_missing_share_pct": 1.238,
+    "lf_prev_or_per_10pts": 1.037814088499558,
+    "lf_prev_p": 4.823409343481074e-12,
+    "meets_min_n": true,
+    "model_comparison": [
+      {
+        "Model": "Majority-class baseline",
+        "accuracy": 0.78419,
+        "auc": 0.5,
+        "cv_auc_mean": null,
+        "cv_auc_sd": null,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      {
+        "Model": "Logistic regression",
+        "accuracy": 0.60318,
+        "auc": 0.66472,
+        "cv_auc_mean": 0.66244,
+        "cv_auc_sd": 0.00279,
+        "f1": 0.41289,
+        "precision": 0.30328,
+        "recall": 0.64657
+      },
+      {
+        "Model": "Random forest",
+        "accuracy": 0.58924,
+        "auc": 0.65154,
+        "cv_auc_mean": 0.64628,
+        "cv_auc_sd": 0.00253,
+        "f1": 0.40332,
+        "precision": 0.29375,
+        "recall": 0.64327
+      },
+      {
+        "Model": "XGBoost",
+        "accuracy": 0.62372,
+        "auc": 0.67751,
+        "cv_auc_mean": 0.65974,
+        "cv_auc_sd": 0.00168,
+        "f1": 0.42289,
+        "precision": 0.31606,
+        "recall": 0.63881
+      }
+    ],
+    "n_test": 80000,
+    "n_total": 400000,
+    "n_train": 320000,
+    "overall_lr_test": {
+      "converged": true,
+      "df": 102,
+      "llr_chi2": 17898.392695639282,
+      "mcfadden_r2": 0.0536198818014445,
+      "n_train": 320000,
+      "p_value": 0.0
+    },
+    "prevalence": 0.2158175,
+    "reference_levels": {
+      "Carrier": "WN",
+      "Day of week": "1",
+      "Destination airport": "Other",
+      "Month": "07",
+      "Origin airport": "Other",
+      "Scheduled departure block": "0700-0759"
+    },
+    "temporal": {
+      "models": {
+        "Logistic regression": {
+          "accuracy": 0.603818880003221,
+          "auc": 0.6427151009508756,
+          "f1": 0.4016327399321972,
+          "precision": 0.30257808115629975,
+          "recall": 0.5971070177421177
+        },
+        "Majority-class baseline": {
+          "accuracy": 0.7773242676034364,
+          "auc": 0.5,
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Random forest": {
+          "accuracy": 0.5827818235806278,
+          "auc": 0.6300354666989606,
+          "f1": 0.3942006956826752,
+          "precision": 0.2912774436009028,
+          "recall": 0.6096056051531247
+        },
+        "XGBoost": {
+          "accuracy": 0.6150269002551624,
+          "auc": 0.6429103627253427,
+          "f1": 0.4013273747564001,
+          "precision": 0.30695831238177335,
+          "recall": 0.5794779071081478
+        }
+      },
+      "n_test": 198697,
+      "n_train": 201303,
+      "prevalence_test": 0.2226757323965636,
+      "prevalence_train": 0.20904805194160048,
+      "test_year": 2025,
+      "train_year": 2024
+    },
+    "threshold": 0.21581875,
+    "top_terms": [
+      {
+        "OR": 3.29981,
+        "OR_hi": 3.47006,
+        "OR_lo": 3.13791,
+        "label": "Scheduled departure 18:00 block",
+        "p": 0.0,
+        "z": 46.51271
+      },
+      {
+        "OR": 3.34161,
+        "OR_hi": 3.51818,
+        "OR_lo": 3.17389,
+        "label": "Scheduled departure 19:00 block",
+        "p": 0.0,
+        "z": 45.92104
+      },
+      {
+        "OR": 3.16108,
+        "OR_hi": 3.32441,
+        "OR_lo": 3.00577,
+        "label": "Scheduled departure 17:00 block",
+        "p": 0.0,
+        "z": 44.77612
+      },
+      {
+        "OR": 3.16911,
+        "OR_hi": 3.34511,
+        "OR_lo": 3.00237,
+        "label": "Scheduled departure 20:00 block",
+        "p": 0.0,
+        "z": 41.82768
+      },
+      {
+        "OR": 2.85579,
+        "OR_hi": 3.00682,
+        "OR_lo": 2.71234,
+        "label": "Scheduled departure 16:00 block",
+        "p": 0.0,
+        "z": 39.90755
+      },
+      {
+        "OR": 2.73193,
+        "OR_hi": 2.87724,
+        "OR_lo": 2.59395,
+        "label": "Scheduled departure 15:00 block",
+        "p": 0.0,
+        "z": 38.00829
+      },
+      {
+        "OR": 0.44488,
+        "OR_hi": 0.46423,
+        "OR_lo": 0.42633,
+        "label": "Month: Sep",
+        "p": 0.0,
+        "z": -37.28587
+      },
+      {
+        "OR": 0.46746,
+        "OR_hi": 0.48737,
+        "OR_lo": 0.44835,
+        "label": "Month: Oct",
+        "p": 0.0,
+        "z": -35.72479
+      },
+      {
+        "OR": 2.90714,
+        "OR_hi": 3.08364,
+        "OR_lo": 2.74074,
+        "label": "Scheduled departure 21:00 block",
+        "p": 0.0,
+        "z": 35.48573
+      },
+      {
+        "OR": 0.48411,
+        "OR_hi": 0.50494,
+        "OR_lo": 0.46414,
+        "label": "Month: Nov",
+        "p": 0.0,
+        "z": -33.75244
+      },
+      {
+        "OR": 2.4087,
+        "OR_hi": 2.53767,
+        "OR_lo": 2.28628,
+        "label": "Scheduled departure 14:00 block",
+        "p": 0.0,
+        "z": 33.03357
+      },
+      {
+        "OR": 2.73842,
+        "OR_hi": 2.92445,
+        "OR_lo": 2.56422,
+        "label": "Scheduled departure 22:00 block",
+        "p": 0.0,
+        "z": 30.04065
+      },
+      {
+        "OR": 0.52734,
+        "OR_hi": 0.55103,
+        "OR_lo": 0.50467,
+        "label": "Month: Feb",
+        "p": 0.0,
+        "z": -28.54257
+      },
+      {
+        "OR": 0.55912,
+        "OR_hi": 0.58232,
+        "OR_lo": 0.53684,
+        "label": "Month: Apr",
+        "p": 0.0,
+        "z": -28.02132
+      }
+    ]
+  },
+  "rq2": {
+    "bp_p": 3.245375310184152e-88,
+    "controlled_p": 5.965679871516082e-37,
+    "controlled_slope": 0.07611344186842237,
+    "decision": "reject H0",
+    "effect_label": "small",
+    "influential_n": 6710,
+    "influential_pct": 4.526413070607997,
+    "intercept": 11.819701289545185,
+    "late_rate_mean": 21.264563185782134,
+    "lf_mean": 79.98147697264965,
+    "min_required": 783,
+    "n": 148241,
+    "n_routes": 9998,
+    "pearson_ci": [
+      0.10279358204212112,
+      0.11285649274105373
+    ],
+    "pearson_p": 0.0,
+    "pearson_r": 0.10782779922138294,
+    "pearson_t": 41.75913621203979,
+    "r_squared": 0.011626834284926871,
+    "resid_kurtosis": 0.9991407614803554,
+    "resid_skew": 0.8077197932966504,
+    "slope": 0.11808811557039244,
+    "slope_ci_clustered": [
+      0.10681703169818899,
+      0.12935919944259588
+    ],
+    "slope_p_clustered": 1.0543912819159263e-93,
+    "slope_se_clustered": 0.005750658665724635,
+    "slope_se_naive": 0.002827839037924021,
+    "slope_without_influential": 0.12051502852369496,
+    "spearman_p": 0.0,
+    "spearman_rho": 0.09864274066053957,
+    "weighted_p": 0.0,
+    "weighted_slope": 0.16224983254038963
+  },
+  "rq3": {
+    "chi2": 1917.0252108579648,
+    "chi2_df": 3,
+    "chi2_p": 0.0,
+    "contrast": {
+      "high_cluster": 2,
+      "low_cluster": 4,
+      "p": 4.4019690199728484e-120,
+      "rate_high": 1.9469015170995112,
+      "rate_low": 1.279547560248952,
+      "z": 23.300303343166707
+    },
+    "cramers_v": 0.011683199881426999,
+    "decision_flight_level": "reject H0",
+    "decision_unit_level": "reject H0",
+    "flights": 14044433,
+    "k": 4,
+    "k_selection": [
+      {
+        "inertia": 4764.4573,
+        "k": 2,
+        "silhouette": 0.2609,
+        "smallest_cluster": 737
+      },
+      {
+        "inertia": 3834.3191,
+        "k": 3,
+        "silhouette": 0.2905,
+        "smallest_cluster": 101
+      },
+      {
+        "inertia": 2978.6033,
+        "k": 4,
+        "silhouette": 0.3202,
+        "smallest_cluster": 100
+      },
+      {
+        "inertia": 2402.9033,
+        "k": 5,
+        "silhouette": 0.2888,
+        "smallest_cluster": 97
+      },
+      {
+        "inertia": 2142.5127,
+        "k": 6,
+        "silhouette": 0.2465,
+        "smallest_cluster": 93
+      },
+      {
+        "inertia": 1914.1877,
+        "k": 7,
+        "silhouette": 0.2545,
+        "smallest_cluster": 42
+      },
+      {
+        "inertia": 1761.1929,
+        "k": 8,
+        "silhouette": 0.2523,
+        "smallest_cluster": 41
+      }
+    ],
+    "kruskal_H": 40.93744505519951,
+    "kruskal_epsilon2": 0.02380015373600973,
+    "kruskal_p": 6.742050182478716e-09,
+    "min_required_total": 6152,
+    "overall_cancel_rate": 1.4122392837076443,
+    "pca_variance": [
+      0.40781517744860996,
+      0.3093149148708074
+    ],
+    "profile": [
+      {
+        "cancel_rate": 1.7973,
+        "cancelled": 2946,
+        "ci_hi": 1.8628,
+        "ci_lo": 1.7341,
+        "cluster": 1,
+        "distance": 384.9954,
+        "flights": 163909,
+        "load_factor": 55.3063,
+        "monthly_departures": 52.5,
+        "seasonal_cv": 0.2465,
+        "top_carriers": "OO, AS, F9",
+        "units": 106
+      },
+      {
+        "cancel_rate": 1.9469,
+        "cancelled": 15143,
+        "ci_hi": 1.9778,
+        "ci_lo": 1.9164,
+        "cluster": 2,
+        "distance": 659.1343,
+        "flights": 777800,
+        "load_factor": 79.6667,
+        "monthly_departures": 52.6957,
+        "seasonal_cv": 0.524,
+        "top_carriers": "MQ, G4, OO",
+        "units": 623
+      },
+      {
+        "cancel_rate": 1.3779,
+        "cancelled": 176537,
+        "ci_hi": 1.3843,
+        "ci_lo": 1.3715,
+        "cluster": 3,
+        "distance": 698.7851,
+        "flights": 12812387,
+        "load_factor": 80.2997,
+        "monthly_departures": 252.6667,
+        "seasonal_cv": 0.1774,
+        "top_carriers": "OO, DL, WN",
+        "units": 771
+      },
+      {
+        "cancel_rate": 1.2795,
+        "cancelled": 3715,
+        "ci_hi": 1.3211,
+        "ci_lo": 1.2393,
+        "cluster": 4,
+        "distance": 2319.8481,
+        "flights": 290337,
+        "load_factor": 84.4786,
+        "monthly_departures": 70.2083,
+        "seasonal_cv": 0.2485,
+        "top_carriers": "AS, HA, B6",
+        "units": 98
+      }
+    ],
+    "silhouette_final": 0.3203282773335322,
+    "units": 1598
+  },
+  "rq4": {
+    "better_model": "SARIMA",
+    "decision_mae": "reject H0",
+    "decision_rmse": "reject H0",
+    "lstm_epochs": [
+      71,
+      40,
+      43
+    ],
+    "means": {
+      "LSTM": {
+        "MAE": 7085.207058988525,
+        "MAPE": 9.910975319190992,
+        "MASE": 1.0740089618002506,
+        "RMSE": 8336.719856089016
+      },
+      "SARIMA": {
+        "MAE": 5449.080658497062,
+        "MAPE": 7.454389245155956,
+        "MASE": 0.817054117760816,
+        "RMSE": 6448.716832132726
+      },
+      "Seasonal naive": {
+        "MAE": 5246.898888888888,
+        "MAPE": 7.250625856483935,
+        "MASE": 0.7978549179485172,
+        "RMSE": 6159.500751912886
+      }
+    },
+    "medians": {
+      "LSTM": {
+        "MAE": 6553.459600591245,
+        "MAPE": 8.736414345117444,
+        "MASE": 0.9210269856348067,
+        "RMSE": 7894.028312176415
+      },
+      "SARIMA": {
+        "MAE": 4704.796469107321,
+        "MAPE": 6.267627340451683,
+        "MASE": 0.7232233788352844,
+        "RMSE": 5645.237464143978
+      },
+      "Seasonal naive": {
+        "MAE": 4514.333333333334,
+        "MAPE": 6.115753071150291,
+        "MASE": 0.7142990976962196,
+        "RMSE": 5502.931292005679
+      }
+    },
+    "min_required": 88,
+    "months_total": 55,
+    "pick_routes": [
+      "LAX-JFK",
+      "DFW-LAS",
+      "ORD-LAS",
+      "MIA-JFK"
+    ],
+    "routes": 150,
+    "sarima_fallbacks": 0,
+    "summary": "{\"('MAE', 'mean')\":{\"LSTM\":7085.2071,\"SARIMA\":5449.0807,\"Seasonal naive\":5246.8989},\"('MAE', 'median')\":{\"LSTM\":6553.4596,\"SARIMA\":4704.7965,\"Seasonal naive\":4514.3333},\"('RMSE', 'mean')\":{\"LSTM\":8336.7199,\"SARIMA\":6448.7168,\"Seasonal naive\":6159.5008},\"('RMSE', 'median')\":{\"LSTM\":7894.0283,\"SARIMA\":5645.2375,\"Seasonal naive\":5502.9313},\"('MASE', 'mean')\":{\"LSTM\":1.074,\"SARIMA\":0.8171,\"Seasonal naive\":0.7979},\"('MASE', 'median')\":{\"LSTM\":0.921,\"SARIMA\":0.7232,\"Seasonal naive\":0.7143},\"('MAPE', 'mean')\":{\"LSTM\":9.911,\"SARIMA\":7.4544,\"Seasonal naive\":7.2506},\"('MAPE', 'median')\":{\"LSTM\":8.7364,\"SARIMA\":6.2676,\"Seasonal naive\":6.1158}}",
+    "test_months": 12,
+    "test_range": [
+      "2025-08-01",
+      "2026-07-01"
+    ],
+    "tests": {
+      "MAE": {
+        "ci": [
+          1056.1913735674807,
+          2216.061427415445
+        ],
+        "cohens_dz": 0.451489811426457,
+        "df": 149,
+        "mean_diff": 1636.1264004914628,
+        "metric": "MAE",
+        "p_t": 1.402172732619148e-07,
+        "p_wilcoxon": 1.0056180638557582e-07,
+        "sd_diff": 3623.8390304361737,
+        "share_routes_lstm_better": 28.666666666666668,
+        "t": 5.529598310301089
+      },
+      "MASE": {
+        "ci": [
+          0.16558131007286753,
+          0.3483283780060015
+        ],
+        "cohens_dz": 0.45003555767915304,
+        "df": 149,
+        "mean_diff": 0.2569548440394345,
+        "metric": "MASE",
+        "p_t": 1.5252380712712436e-07,
+        "p_wilcoxon": 1.1263154151981989e-07,
+        "sd_diff": 0.5709656485024392,
+        "share_routes_lstm_better": 28.666666666666668,
+        "t": 5.511787412113964
+      },
+      "RMSE": {
+        "ci": [
+          1280.684031891993,
+          2495.3220160205883
+        ],
+        "cohens_dz": 0.4975036425025046,
+        "df": 149,
+        "mean_diff": 1888.0030239562907,
+        "metric": "RMSE",
+        "p_t": 9.025667825628455e-09,
+        "p_wilcoxon": 6.99630981037248e-09,
+        "sd_diff": 3794.9531674972327,
+        "share_routes_lstm_better": 29.333333333333332,
+        "t": 6.093150346535771
+      }
+    },
+    "train_months": 43,
+    "train_range": [
+      "2022-01-01",
+      "2025-07-01"
+    ]
+  },
+  "sample_size": {
+    "final_n": 9604,
+    "rq1": 9604,
+    "rq1_raw_n": 9603.647051735314,
+    "rq2": 783,
+    "rq2_C": 0.10033534773107562,
+    "rq2_raw_n": 782.6501276111056,
+    "rq3_inner1": 0.0392,
+    "rq3_inner2": 0.039150000000000004,
+    "rq3_numerator": 0.30755816558915616,
+    "rq3_pbar": 0.02,
+    "rq3_per_group": 3076,
+    "rq3_raw_n": 3075.5816558915603,
+    "rq3_term1": 0.3880530708179098,
+    "rq3_term2": 0.1665261981681894,
+    "rq3_total": 6152,
+    "rq4": 88,
+    "rq4_raw_n": 87.20977482610098,
+    "z_alpha": 1.959963984540054,
+    "z_beta": 0.8416212335729143
+  }
+}

@@ -1,0 +1,6 @@
+file,rows_in_file,rows_kept,years
+t100_segment_2022.csv,411573,411573,[2022]
+t100_segment_2023.csv,427427,427427,[2023]
+t100_segment_2024.csv,440939,440939,[2024]
+t100_segment_2025.csv,458793,458793,[2025]
+t100_segment_2026.csv,268069,268069,[2026]

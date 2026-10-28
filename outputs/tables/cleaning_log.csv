@@ -1,0 +1,11 @@
+Issue,Variables affected,Detection method,Treatment applied,Rationale,Count,Percent
+Missing values (arrival delay),"arr_delay, arr_del15",Count of NaN; cross-tab with cancelled/diverted flags,Kept; excluded from delay analyses via the 'operated' flag,Missing arrival delay is structural: cancelled and diverted flights never arrive normally,235949,1.676
+Missing values (unexplained),arr_delay,NaN where flight was neither cancelled nor diverted,Excluded from delay analyses,True data gaps cannot be imputed without bias,1,0.0
+Missing values (delay causes),carrier/weather/nas/security/late-aircraft delay,NaN among late flights,Kept missing; treated as 0 minutes only inside late flights (EDA),BTS records causes only for delays of 15+ minutes,2,
+Duplicates,"flight_date, carrier_id, flight_number, origin_id, dest_id, crs_dep_time",duplicated() on the flight key,Dropped (first kept),A flight can occur once per scheduled departure,0,0.0
+Invalid distance / route,"distance, origin_id, dest_id",distance <= 0 or origin == destination,Dropped,Not a real flight leg,0,0.0
+Logical inconsistency,arr_del15 vs arr_delay,arr_del15 != (arr_delay >= 15),Reported (no correction needed if 0),Confirms the binary flag matches the minutes field,0,0.0
+Outliers (extreme delay),arr_delay,Tukey fence Q3 + 3 x IQR,Retained; robust statistics and clipped display ranges used,"Extreme delays are real operational events, not errors",707213,5.108
+T-100 rows without carrier or airport ID,"carrier_id, origin_id, dest_id",Missing key field,Dropped (cannot be joined to the On-Time table),Stable IDs are the join keys; passengers on these rows are a negligible share,24,0.002
+T-100 duplicates,all fields,duplicated() on whole row,Dropped,Exact repeats are reporting artefacts,0,0.0
+T-100 impossible load factor,"passengers, seats",load factor > 100% after summing aircraft types,Set to missing for load-factor analyses,Passengers cannot exceed seats offered,77,0.01

@@ -1,0 +1,9 @@
+Feature,Original / engineered,Type,Reason for inclusion,Used in model(s)
+Month,Original,Categorical (12),Seasonal weather and demand cycles,"LR, RF, XGB"
+Day of week,Original,Categorical (7),Weekly demand and schedule patterns,"LR, RF, XGB"
+Scheduled departure block,Original,Categorical (hourly),Delays accumulate through the day (knock-on effects),"LR, RF, XGB"
+Carrier,Original,Categorical,Operating practices differ by airline,"LR, RF, XGB"
+Origin airport,Engineered (top 25 + Other),Categorical,Congestion and weather exposure differ by airport; grouping avoids sparse levels,"LR, RF, XGB"
+Destination airport,Engineered (top 25 + Other),Categorical,"Same, for arrival airport","LR, RF, XGB"
+"Route distance (per 1,000 mi)",Original (rescaled),Continuous,Longer flights have more schedule slack,"LR, RF, XGB"
+Prior-month route load factor (per +10 pts),"Engineered (T-100 join, previous month)",Continuous + missing flag,Fuller aircraft take longer to board; previous month is known before departure,"LR, RF, XGB"

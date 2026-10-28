@@ -1,0 +1,14 @@
+# ---- raw BTS downloads are large (GB-scale for a full year); keep them out of git, keep the folders
+data/raw/otp/*
+data/raw/t100_segment/*
+!data/raw/otp/.gitkeep
+!data/raw/t100_segment/.gitkeep
+# ---- big intermediate files (rebuilt by notebook 01)
+data/processed/*.parquet
+data/processed/rq1_sample.csv.gz
+# ---- python / jupyter noise
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+.DS_Store
