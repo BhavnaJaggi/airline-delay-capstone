@@ -1,0 +1,11 @@
+query,sql_result,pipeline_value,agrees,seconds
+Flights in the cleaned flight table,14080680.0,14080680.0,True,0.004
+Operated flights,13844731.0,13844731.0,True,0.009
+Late-arrival rate of operated flights (%),21.557688625369465,21.557689666748047,True,0.02
+Cancellation rate (%),1.4146404861128865,1.4146404861128865,True,0.008
+Late-arrival rate in July 2024 (%),29.62269805745857,29.62,True,0.014
+Route-months in the research question 2 table,148241.0,148241.0,True,0.001
+Pearson correlation of load factor and late rate,0.10782779922138624,0.10782779922138294,True,0.006
+Carrier-airport units in the research question 3 table,1598.0,1598.0,True,0.0
+Routes with monthly passengers (research question 4),150.0,150.0,True,0.002
+"Flights per carrier-airport unit, total",14044433.0,14044433.0,True,0.001

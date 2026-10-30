@@ -1,0 +1,87 @@
+{
+ "cases": [
+  {
+   "label": "Friday evening in July",
+   "carrier": "AA",
+   "origin": "ORD",
+   "dest": "LGA",
+   "month": 7,
+   "day_of_week": 5,
+   "dep_time": 1845,
+   "block": "1800-1859",
+   "probability_late": 0.496404230594635,
+   "risk_band": "high",
+   "relative_risk": 2.300164404724634,
+   "drivers": [
+    {
+     "factor": "Scheduled departure block",
+     "log_odds_contribution": 0.44300734996795654,
+     "direction": "raises risk"
+    },
+    {
+     "factor": "Month",
+     "log_odds_contribution": 0.293902724981308,
+     "direction": "raises risk"
+    },
+    {
+     "factor": "Carrier",
+     "log_odds_contribution": 0.21287810802459717,
+     "direction": "raises risk"
+    }
+   ],
+   "history_flights": 54,
+   "history_late_pct": 68.51851851851852
+  },
+  {
+   "label": "Tuesday morning in October",
+   "carrier": "AA",
+   "origin": "ORD",
+   "dest": "LGA",
+   "month": 10,
+   "day_of_week": 2,
+   "dep_time": 745,
+   "block": "0700-0759",
+   "probability_late": 0.18542174994945526,
+   "risk_band": "typical",
+   "relative_risk": 0.8591798433800418,
+   "drivers": [
+    {
+     "factor": "Scheduled departure block",
+     "log_odds_contribution": -0.3184012174606323,
+     "direction": "lowers risk"
+    },
+    {
+     "factor": "Month",
+     "log_odds_contribution": -0.25371918082237244,
+     "direction": "lowers risk"
+    },
+    {
+     "factor": "Carrier",
+     "log_odds_contribution": 0.23908154666423798,
+     "direction": "raises risk"
+    }
+   ],
+   "history_flights": 49,
+   "history_late_pct": 14.285714285714285
+  }
+ ],
+ "baseline": 0.2158125,
+ "cutoffs": {
+  "elevated": 0.2587919235229492,
+  "high": 0.35927653312683105
+ },
+ "band_rates": {
+  "typical": {
+   "share_of_flights_pct": 70.0,
+   "late_rate_pct": 15.810714285714287
+  },
+  "elevated": {
+   "share_of_flights_pct": 20.0,
+   "late_rate_pct": 30.16875
+  },
+  "high": {
+   "share_of_flights_pct": 10.0,
+   "late_rate_pct": 44.800000000000004
+  }
+ }
+}

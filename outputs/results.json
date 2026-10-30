@@ -729,7 +729,7 @@
         "OR": 0.44488,
         "OR_hi": 0.46423,
         "OR_lo": 0.42633,
-        "label": "Month: Sep",
+        "label": "Month: September",
         "p": 0.0,
         "z": -37.28587
       },
@@ -737,7 +737,7 @@
         "OR": 0.46746,
         "OR_hi": 0.48737,
         "OR_lo": 0.44835,
-        "label": "Month: Oct",
+        "label": "Month: October",
         "p": 0.0,
         "z": -35.72479
       },
@@ -753,7 +753,7 @@
         "OR": 0.48411,
         "OR_hi": 0.50494,
         "OR_lo": 0.46414,
-        "label": "Month: Nov",
+        "label": "Month: November",
         "p": 0.0,
         "z": -33.75244
       },
@@ -777,7 +777,7 @@
         "OR": 0.52734,
         "OR_hi": 0.55103,
         "OR_lo": 0.50467,
-        "label": "Month: Feb",
+        "label": "Month: February",
         "p": 0.0,
         "z": -28.54257
       },
@@ -785,11 +785,216 @@
         "OR": 0.55912,
         "OR_hi": 0.58232,
         "OR_lo": 0.53684,
-        "label": "Month: Apr",
+        "label": "Month: April",
         "p": 0.0,
         "z": -28.02132
       }
     ]
+  },
+  "rq1_current_practice": {
+    "auc": {
+      "Historical late rate by airline": 0.5476486194705474,
+      "Historical late rate by airline and route": 0.5726487566899052
+    },
+    "route_coverage_pct": 99.67375000000001,
+    "smoothing": 20
+  },
+  "rq1_extension": {
+    "best_model": "XGBoost",
+    "bottom_decile_late_pct": 7.375,
+    "confusion": {
+      "Logistic regression": {
+        "fn": 6102,
+        "fp": 25644,
+        "tn": 37091,
+        "tp": 11163
+      },
+      "XGBoost": {
+        "fn": 6236,
+        "fp": 23866,
+        "tn": 38869,
+        "tp": 11029
+      }
+    },
+    "deciles": [
+      {
+        "decile": 1,
+        "flights": 8000,
+        "lift": 0.3417,
+        "observed": 7.375,
+        "predicted": 7.506700038909912
+      },
+      {
+        "decile": 2,
+        "flights": 8000,
+        "lift": 0.4987,
+        "observed": 10.7625,
+        "predicted": 11.118900299072266
+      },
+      {
+        "decile": 3,
+        "flights": 8000,
+        "lift": 0.6145,
+        "observed": 13.2625,
+        "predicted": 13.776700019836426
+      },
+      {
+        "decile": 4,
+        "flights": 8000,
+        "lift": 0.724,
+        "observed": 15.625,
+        "predicted": 16.252199172973633
+      },
+      {
+        "decile": 5,
+        "flights": 8000,
+        "lift": 0.8231,
+        "observed": 17.7625,
+        "predicted": 18.680299758911133
+      },
+      {
+        "decile": 6,
+        "flights": 8000,
+        "lift": 0.9823,
+        "observed": 21.2,
+        "predicted": 21.211599349975586
+      },
+      {
+        "decile": 7,
+        "flights": 8000,
+        "lift": 1.1439,
+        "observed": 24.6875,
+        "predicted": 24.167499542236328
+      },
+      {
+        "decile": 8,
+        "flights": 8000,
+        "lift": 1.2685,
+        "observed": 27.375,
+        "predicted": 27.820899963378906
+      },
+      {
+        "decile": 9,
+        "flights": 8000,
+        "lift": 1.5274,
+        "observed": 32.9625,
+        "predicted": 32.70650100708008
+      },
+      {
+        "decile": 10,
+        "flights": 8000,
+        "lift": 2.0759,
+        "observed": 44.8,
+        "predicted": 42.18299865722656
+      }
+    ],
+    "gain_importance_by_factor": {
+      "Carrier": 0.10790000110864639,
+      "Day of week": 0.03539999946951866,
+      "Destination airport": 0.12880000472068787,
+      "Month": 0.11500000208616257,
+      "Origin airport": 0.12309999763965607,
+      "Prior-month load factor": 0.0052999998442828655,
+      "Route distance": 0.00419999985024333,
+      "Scheduled departure block": 0.48030000925064087
+    },
+    "n_features": 102,
+    "table": [
+      {
+        "Model": "Majority-class baseline",
+        "auc_gap": 0.0,
+        "test_accuracy": 0.78419,
+        "test_auc": 0.5,
+        "test_f1": 0.0,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "train_accuracy": 0.78418,
+        "train_auc": 0.5,
+        "train_f1": 0.0
+      },
+      {
+        "Model": "Logistic regression",
+        "auc_gap": -0.00256,
+        "test_accuracy": 0.60318,
+        "test_auc": 0.66472,
+        "test_f1": 0.41289,
+        "test_precision": 0.30328,
+        "test_recall": 0.64657,
+        "train_accuracy": 0.60149,
+        "train_auc": 0.66217,
+        "train_f1": 0.41145
+      },
+      {
+        "Model": "Random forest",
+        "auc_gap": 0.00382,
+        "test_accuracy": 0.58924,
+        "test_auc": 0.65154,
+        "test_f1": 0.40332,
+        "test_precision": 0.29375,
+        "test_recall": 0.64327,
+        "train_accuracy": 0.59093,
+        "train_auc": 0.65536,
+        "train_f1": 0.40557
+      },
+      {
+        "Model": "XGBoost",
+        "auc_gap": 0.04242,
+        "test_accuracy": 0.62372,
+        "test_auc": 0.67751,
+        "test_f1": 0.42289,
+        "test_precision": 0.31606,
+        "test_recall": 0.63881,
+        "train_accuracy": 0.64409,
+        "train_auc": 0.71993,
+        "train_f1": 0.45433
+      },
+      {
+        "Model": "XGBoost (tuned)",
+        "auc_gap": 0.01431,
+        "test_accuracy": 0.61454,
+        "test_auc": 0.67244,
+        "test_f1": 0.41677,
+        "test_precision": 0.30942,
+        "test_recall": 0.63817,
+        "train_accuracy": 0.62217,
+        "train_auc": 0.68674,
+        "train_f1": 0.42874
+      },
+      {
+        "Model": "Random forest (tuned)",
+        "auc_gap": 0.02366,
+        "test_accuracy": 0.59946,
+        "test_auc": 0.66086,
+        "test_f1": 0.4089,
+        "test_precision": 0.29999,
+        "test_recall": 0.64193,
+        "train_accuracy": 0.61023,
+        "train_auc": 0.68452,
+        "train_f1": 0.42409
+      }
+    ],
+    "threshold": 0.21581875,
+    "top_decile_late_pct": 44.800000000000004,
+    "top_decile_lift": 2.075876049811758,
+    "tuning": {
+      "rf": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 20,
+        "n_estimators": 150
+      },
+      "rf_cv_auc": 0.6546345353965282,
+      "xgb": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "min_child_weight": 1,
+        "n_estimators": 200,
+        "reg_lambda": 5,
+        "subsample": 0.7
+      },
+      "xgb_cv_auc": 0.6635135471621587
+    }
   },
   "rq2": {
     "bp_p": 3.245375310184152e-88,
@@ -828,6 +1033,19 @@
     "spearman_rho": 0.09864274066053957,
     "weighted_p": 0.0,
     "weighted_slope": 0.16224983254038963
+  },
+  "rq2_extension": {
+    "n_test": 29753,
+    "n_train": 118488,
+    "pearson_test": 0.11116817327859194,
+    "r2_test": 0.012332329308301082,
+    "r2_train": 0.011451385909705514,
+    "rmse_test": 11.16722788506904,
+    "rmse_test_mean_only": 11.236733626858985,
+    "rmse_train": 11.270269550813156,
+    "routes_test": 2000,
+    "routes_train": 7998,
+    "slope_train": 0.11700632975014738
   },
   "rq3": {
     "chi2": 1917.0252108579648,
@@ -960,16 +1178,31 @@
     "silhouette_final": 0.3203282773335322,
     "units": 1598
   },
+  "rq3_extension": {
+    "ari_mean": 0.9079838820662662,
+    "ari_min": 0.5885856991811712,
+    "ari_p5": 0.7674308328691711,
+    "ari_sd": 0.06931277146561189,
+    "bootstrap_runs": 200,
+    "k": 4
+  },
   "rq4": {
     "better_model": "SARIMA",
     "decision_mae": "reject H0",
     "decision_rmse": "reject H0",
+    "ets_fallbacks": 0,
     "lstm_epochs": [
       71,
       40,
       43
     ],
     "means": {
+      "Exponential smoothing": {
+        "MAE": 5321.63466693538,
+        "MAPE": 7.384682251546706,
+        "MASE": 0.8055854975072083,
+        "RMSE": 6261.562646397108
+      },
       "LSTM": {
         "MAE": 7085.207058988525,
         "MAPE": 9.910975319190992,
@@ -990,6 +1223,12 @@
       }
     },
     "medians": {
+      "Exponential smoothing": {
+        "MAE": 4417.37858888558,
+        "MAPE": 6.130429392362377,
+        "MASE": 0.6971555696639871,
+        "RMSE": 5328.5938668206
+      },
       "LSTM": {
         "MAE": 6553.459600591245,
         "MAPE": 8.736414345117444,
@@ -1019,7 +1258,7 @@
     ],
     "routes": 150,
     "sarima_fallbacks": 0,
-    "summary": "{\"('MAE', 'mean')\":{\"LSTM\":7085.2071,\"SARIMA\":5449.0807,\"Seasonal naive\":5246.8989},\"('MAE', 'median')\":{\"LSTM\":6553.4596,\"SARIMA\":4704.7965,\"Seasonal naive\":4514.3333},\"('RMSE', 'mean')\":{\"LSTM\":8336.7199,\"SARIMA\":6448.7168,\"Seasonal naive\":6159.5008},\"('RMSE', 'median')\":{\"LSTM\":7894.0283,\"SARIMA\":5645.2375,\"Seasonal naive\":5502.9313},\"('MASE', 'mean')\":{\"LSTM\":1.074,\"SARIMA\":0.8171,\"Seasonal naive\":0.7979},\"('MASE', 'median')\":{\"LSTM\":0.921,\"SARIMA\":0.7232,\"Seasonal naive\":0.7143},\"('MAPE', 'mean')\":{\"LSTM\":9.911,\"SARIMA\":7.4544,\"Seasonal naive\":7.2506},\"('MAPE', 'median')\":{\"LSTM\":8.7364,\"SARIMA\":6.2676,\"Seasonal naive\":6.1158}}",
+    "summary": "{\"('MAE', 'mean')\":{\"Exponential smoothing\":5321.6347,\"LSTM\":7085.2071,\"SARIMA\":5449.0807,\"Seasonal naive\":5246.8989},\"('MAE', 'median')\":{\"Exponential smoothing\":4417.3786,\"LSTM\":6553.4596,\"SARIMA\":4704.7965,\"Seasonal naive\":4514.3333},\"('RMSE', 'mean')\":{\"Exponential smoothing\":6261.5626,\"LSTM\":8336.7199,\"SARIMA\":6448.7168,\"Seasonal naive\":6159.5008},\"('RMSE', 'median')\":{\"Exponential smoothing\":5328.5939,\"LSTM\":7894.0283,\"SARIMA\":5645.2375,\"Seasonal naive\":5502.9313},\"('MASE', 'mean')\":{\"Exponential smoothing\":0.8056,\"LSTM\":1.074,\"SARIMA\":0.8171,\"Seasonal naive\":0.7979},\"('MASE', 'median')\":{\"Exponential smoothing\":0.6972,\"LSTM\":0.921,\"SARIMA\":0.7232,\"Seasonal naive\":0.7143},\"('MAPE', 'mean')\":{\"Exponential smoothing\":7.3847,\"LSTM\":9.911,\"SARIMA\":7.4544,\"Seasonal naive\":7.2506},\"('MAPE', 'median')\":{\"Exponential smoothing\":6.1304,\"LSTM\":8.7364,\"SARIMA\":6.2676,\"Seasonal naive\":6.1158}}",
     "test_months": 12,
     "test_range": [
       "2025-08-01",
@@ -1070,6 +1309,50 @@
         "sd_diff": 3794.9531674972327,
         "share_routes_lstm_better": 29.333333333333332,
         "t": 6.093150346535771
+      }
+    },
+    "train_means": {
+      "Exponential smoothing": {
+        "MAE": 2550.1359296985333,
+        "MASE": 0.40558459974590333,
+        "RMSE": 3181.565094522309
+      },
+      "LSTM": {
+        "MAE": 5254.844895963584,
+        "MASE": 0.8301972413752932,
+        "RMSE": 6435.905249235197
+      },
+      "SARIMA": {
+        "MAE": 4426.054589331803,
+        "MASE": 0.701090569246558,
+        "RMSE": 5648.240118444179
+      },
+      "Seasonal naive": {
+        "MAE": 6633.080666666668,
+        "MASE": 1.0,
+        "RMSE": 8176.8334398147945
+      }
+    },
+    "train_medians": {
+      "Exponential smoothing": {
+        "MAE": 2479.5252362655588,
+        "MASE": 0.3824820672238932,
+        "RMSE": 3085.762424873528
+      },
+      "LSTM": {
+        "MAE": 5080.0656942873065,
+        "MASE": 0.7827997983366597,
+        "RMSE": 6273.781223388
+      },
+      "SARIMA": {
+        "MAE": 4214.759362007031,
+        "MASE": 0.6887572998474322,
+        "RMSE": 5463.653267100834
+      },
+      "Seasonal naive": {
+        "MAE": 6359.549999999999,
+        "MASE": 1.0,
+        "RMSE": 7903.870029920195
       }
     },
     "train_months": 43,

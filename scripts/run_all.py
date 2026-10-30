@@ -1,4 +1,4 @@
-"""Run notebooks 00-06 in order and save the executed copies in place.
+"""Run notebooks 00-07 in order and save the executed copies in place.
 
     python scripts/run_all.py            # everything
     python scripts/run_all.py 03 04      # only notebooks whose name starts with 03 or 04
